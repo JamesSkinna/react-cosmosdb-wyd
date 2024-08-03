@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import Heroes from "./components/Heroes";
+import DealLocations from "./components/DealLocations";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Heroes</h1>
+        <h1>Deal Locations</h1>
         <div className="header-bar" />
-        <app-heroes />
-        <Heroes />
+        <DealLocations />
       </div>
     );
   }

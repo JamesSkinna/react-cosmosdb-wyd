@@ -1,9 +1,10 @@
+css
 /* You can add global styles to this file, and also import other style files */
 * {
     font-family: Arial;
 }
 
-h2 {
+h1 {
     color: #444;
     font-weight: lighter;
 }
@@ -13,7 +14,8 @@ body {
 }
 
 body,
-input[text],
+input[type="text"],
+input[type="number"],
 button {
     color: #888;
 }
@@ -26,11 +28,12 @@ button {
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    cursor: hand;
 }
+
 button:hover {
     background-color: #cfd8dc;
 }
+
 button.delete-button {
     float: right;
     background-color: gray !important;
@@ -51,13 +54,14 @@ div {
     color: white;
 }
 
-.heroes {
+.deal-locations {
     float: left;
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
 }
-.heroes li {
+
+.deal-locations li {
     cursor: pointer;
     position: relative;
     left: 0;
@@ -68,28 +72,32 @@ div {
     border-radius: 4px;
     width: 17em;
 }
-.heroes li:hover {
+
+.deal-locations li:hover {
     color: #607d8b;
     color: #0078d7;
     background-color: #ddd;
     left: .1em;
 }
-.heroes li.selected:hover {
-    /*background-color: #BBD8DC !important;*/
+
+.deal-locations li.selected:hover {
     color: white;
 }
-.heroes .text {
+
+.deal-locations .text {
     position: relative;
     top: -3px;
 }
-.heroes .saying {
+
+.deal-locations .location {
     margin: 5px 0;
 }
-.heroes .name {
+
+.deal-locations .deal-id {
     font-weight: bold;
 }
-.heroes .badge {
-    /* display: inline-block; */
+
+.deal-locations .badge {
     float: left;
     font-size: small;
     color: white;
@@ -119,7 +127,9 @@ label {
     width: 4em;
     margin: .5em 0;
     color: #888;
+    padding-right: 1em;
 }
+
 label.value {
     margin-left: 10px;
     font-size: 14px;
@@ -130,6 +140,7 @@ input {
     font-size: 1em;
     padding-left: .4em;
 }
+
 input::placeholder {
     color: lightgray;
     font-weight: normal;
@@ -140,14 +151,17 @@ input::placeholder {
 .editarea {
     float: left;
 }
+
 .editarea input {
     margin: 4px;
     height: 20px;
     color: #0078d7;
 }
+
 .editarea button {
     margin: 8px;
 }
+
 .editarea .editfields {
     margin-left: 12px;
 }
